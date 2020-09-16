@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  /* Create three equal columns */
+  .column {
+    float: left;
+    width: 23.33%;
+    padding: 10px;
+    padding-top: 10px;
+    height: 350px; 
+    margin: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack  */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  #myDIV {
+    background-color: chocolate;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {margin-left: 50px;}
+  }
+  
+  .link
+{
+    text-decoration: none;
+    
+}
+.move
+{
+    padding-left: 700px;
+    
+    float: right;
+    color: black;
+
+}
